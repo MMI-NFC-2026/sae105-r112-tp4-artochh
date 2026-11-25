@@ -4,11 +4,20 @@
 .accordeon {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+}
+
+.accordeon > details {
+  display: flex;
 }
 
 .accordeon > details > summary {
   cursor: pointer;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.accordeon > details > summary::-webkit-details-marker {
+  display: none;
 }
 
 .accordeon > details > summary img {
@@ -16,13 +25,18 @@
   width: 5rem;
 }
 
-.accordeon > details[open] > summary {
-  float: left;
-  margin-right: 1rem;
+/* zone de contenu du details : largeur animée */
+.accordeon > details::details-content {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s, content-visibility 0.5s allow-discrete;
+}
+
+.accordeon > details[open]::details-content {
+  width: 9rem;
 }
 
 .accordeon > details > div {
-  overflow: hidden;
   width: 8rem;
 }
 
