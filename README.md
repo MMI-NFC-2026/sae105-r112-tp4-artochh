@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Rouby
+- prénom : Arthis
+- URL Netlify : zingy-gelato-95ca43.netlify.app
 
 # Travail
 

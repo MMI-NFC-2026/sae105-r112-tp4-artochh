@@ -1,3 +1,17 @@
 /**
 * Accordeon
 */
+.accordeon {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.accordeon > details > summary {
+  cursor: pointer;
+}
+
+.accordeon > details > summary img {
+  display: block;
+  width: 5rem;
+}
