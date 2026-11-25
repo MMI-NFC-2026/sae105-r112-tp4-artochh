@@ -15,3 +15,17 @@
   display: block;
   width: 5rem;
 }
+
+.accordeon > details[open] > summary {
+  float: left;
+  margin-right: 1rem;
+}
+
+.accordeon > details > div {
+  overflow: hidden;
+  width: 8rem;
+}
+
+.accordeon > details > div h3 {
+  margin-top: 0;
+}
